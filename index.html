@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-curriculo-Daniel</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="./Recursos/logo.jpg">
+</head>
+<body>
+    <div class="page-container">
+        <div class="fab-container">
+            <button class="fab-button" id="action-button">
+                <i class="fas fa-ellipsis-v"></i>
+            </button>
+            <div class="fab-options" id="fab-options">
+                <button class="fab-option" id="print-button">
+                    <i class="fas fa-print"></i>
+                    <span>Print</span>
+                </button>
+                <button class="fab-option" id="theme-button">
+                    <i class="fas fa-moon"></i>
+                    <span>Theme</span>
+                </button>
+            </div>
+        </div>
+
+        <header class="resume-header">
+            <div class="header-content">
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <div class="image-container">
+                            <img src="./Recursos/IMG_0890.JPG" alt="Professional Photo">
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <h1 class="name">DANIEL OYOLA MORENO</h1>
+                        <div class="tagline">
+                            <p>Estudiante apasionado por el aprendizaje continuo y el desarrollo de habilidades técnicas y profesionales.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-section">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:doyolam01@educarex.es">doyolam01@educarex.es</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Fregenal de la Sierra</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/DanielOyolaMoreno" target="_blank">Github</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="resume-content">
+            <section class="resume-section" id="summary-section">
+                <div class="section-header">
+                    <h2 class="section-title">Bienvenido</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="section-content">
+                    <p class="summary-text">
+                        ¡Bienvenido a mi currículum! Espero que disfrutes explorando mi trayectoria, habilidades y proyectos. Estoy emocionado de compartir mi pasión por la tecnología y el desarrollo de software contigo. ¡Gracias por tu tiempo y espero que encuentres interesante mi perfil!
+                    </p>
+                </div>
+            </section>
+            <section class="resume-section" id="skills-section">
+                <div class="section-header">
+                    <h2 class="section-title">Professional Skills</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="section-content">
+                    <div class="skills-container">
+                        <div class="skills-category">
+                            <h3 class="category-title">Soft skills</h3>
+                            <div class="skills-grid">
+                                <div class="skill-item" data-skill="Resolucion de Problemas" data-level="95">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Resolucion de Problemas</span>
+                                        <span class="skill-percentage">95%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item" data-skill="Trabajo en Equipo" data-level="90">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Trabajo en Equipo</span>
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item" data-skill="Puntualidad" data-level="85">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Puntualidad</span>
+                                        <span class="skill-percentage">85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item" data-skill="Comunicación" data-level="90">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Comunicación</span>
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item" data-skill="Adaptabilidad" data-level="90">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Adaptabilidad</span>
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item" data-skill="Creatividad" data-level="70">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Creatividad</span>
+                                        <span class="skill-percentage">70%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skills-category">
+                            <h3 class="category-title">Backend</h3>
+                            <div class="skills-grid">
+                                <div class="skill-item" data-skill="Java" data-level="90">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Java</span>
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item" data-skill="SQL" data-level="70">
+                                    <div class="skill-info">
+                                        <span class="skill-name">SQL</span>
+                                        <span class="skill-percentage">70%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item" data-skill="Bash y PowerShell" data-level="90">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Bash y PowerShell</span>
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item" data-skill="Python" data-level="20">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Python</span>
+                                        <span class="skill-percentage">20%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item" data-skill="Frameworks" data-level="0">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Frameworks</span>
+                                        <span class="skill-percentage">0%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skills-category">
+                            <h3 class="category-title">Frontend</h3>
+                            <div class="skills-grid">
+                                <div class="skill-item" data-skill="HTML" data-level="100">
+                                    <div class="skill-info">
+                                        <span class="skill-name">HTML</span>
+                                        <span class="skill-percentage">100%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item" data-skill="Css" data-level="90">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Css</span>
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item" data-skill="JavaScript" data-level="80">
+                                    <div class="skill-info">
+                                        <span class="skill-name">JavaScript</span>
+                                        <span class="skill-percentage">80%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item" data-skill="Frameworks" data-level="0">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Frameworks</span>
+                                        <span class="skill-percentage">0%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="resume-section" id="projects-section">
+                <div class="section-header">
+                    <h2 class="section-title">Proyectos</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="section-content">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3 class="project-title">App de Faltas</h3>
+                            <p class="project-description">
+                                Actualmente estoy programando una aplicacion de faltas donde se podra registrar las faltas y calcular el numero de horas que se ha faltado en todo el curso.
+                            </p>
+                            <!-- <div class="project-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">$2.5M</span>
+                                    <span class="metric-label">Revenue</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">45</span>
+                                    <span class="metric-label">Clients</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">8</span>
+                                    <span class="metric-label">Months</span>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="resume-section" id="education-section">
+                <div class="section-header">
+                    <h2 class="section-title">Titulos obtenidos</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="section-content">
+                    <div class="education-grid">
+                        <div class="education-item">
+                            <div class="education-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="education-details">
+                                <h3 class="education-degree">Educacion Secundaria Obligatoria</h3>
+                                <h4 class="education-school">Ies Eugenio Hermoso</h4>
+                                <p class="education-date">2017 - 2021</p>
+                                <!-- <p class="education-description">Descripcion</p> -->
+                            </div>
+                        </div>
+                        
+                        <div class="education-item">
+                            <div class="education-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="education-details">
+                                <h3 class="education-degree">GM-Sistemas Microinformáticos y Redes</h3>
+                                <h4 class="education-school">Ies Ildefonso Serrano</h4>
+                                <p class="education-date">2022 - 2023</p>
+                                <p class="education-description">Estudios centrados en la instalación, configuración y mantenimiento de sistemas informáticos, redes locales y servicios de internet, con énfasis en la resolución de problemas técnicos y la seguridad informática.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="education-item">
+                            <div class="education-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="education-details">
+                                <h3 class="education-degree">GS-Desarrollo de Aplicaciones Web</h3>
+                                <h4 class="education-school">Ies Castelar</h4>
+                                <p class="education-date">2024</p>
+                                <p class="education-description">Actualmente esta en curso</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="resume-section" id="web-development-knowledge-section">
+                <div class="section-header">
+                    <h2 class="section-title">Conocimientos en Sistemas Microinformáticos y Redes:</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="section-content">
+                    <ul class="knowledge-list">
+                        <li>Instalación, configuración y mantenimiento de sistemas operativos Windows y Linux.</li>
+                        <li>Montaje y reparación de equipos informáticos.</li>
+                        <li>Diseño, configuración y administración de redes locales (LAN).</li>
+                        <li>Gestión de servidores y servicios de red como DHCP, DNS y FTP.</li>
+                        <li>Seguridad informática básica, incluyendo copias de seguridad y protección contra malware.</li>
+                        <li>Resolución de problemas técnicos y soporte a usuarios.</li>
+                        <li>Virtualización de sistemas utilizando herramientas como VirtualBox.</li>
+                        <li>Conocimientos básicos de scripting en Bash y PowerShell.</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="resume-section" id="web-development-app-section">
+                <div class="section-header">
+                    <h2 class="section-title">Conocimientos en Desarrollo de Aplicaciones Web</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="section-content">
+                    <ul class="knowledge-list">
+                        <li>Desarrollo de interfaces web utilizando HTML, CSS y JavaScript.</li>
+                        <li>Creación de aplicaciones dinámicas con frameworks como React o Angular.</li>
+                        <li>Diseño y consumo de APIs RESTful.</li>
+                        <li>Gestión de bases de datos relacionales con SQL y no relacionales como MongoDB.</li>
+                        <li>Implementación de autenticación y autorización en aplicaciones web.</li>
+                        <li>Optimización de rendimiento y accesibilidad en sitios web.</li>
+                        <li>Uso de herramientas de control de versiones como Git y plataformas como GitHub.</li>
+                        <li>Pruebas y depuración de aplicaciones web para garantizar calidad y funcionalidad.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="resume-section" id="testimonials-section">
+                <div class="section-header">
+                    <h2 class="section-title">Otras Cosas</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="section-content">
+                    <div class="testimonials-container">
+                        <div class="testimonial-controls">
+                            <button id="prev-testimonial" class="testimonial-control">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button id="next-testimonial" class="testimonial-control">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="testimonials-slider">
+                            <div class="testimonial-slide active">
+                                <div class="testimonial-content">
+                                    <div class="testimonial-quote">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <div class="testimonial-text">
+                                        <b>Mas sobre mi:</b><br>
+                                        <div> 
+                                            Me llamo Daniel Oyola Moreno y soy un joven desarrollador de 19 años que reside en la capital de Badajoz, le apasiona este mundo y le gusta aprender todo tipo de tecnologías.
+                                        </div>
+                                        <div>
+                                            En mi tiempo libre, disfruto explorando nuevas herramientas de desarrollo, participando en proyectos personales y colaborando con otros entusiastas de la tecnología.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-slide">
+                                <div class="testimonial-content">
+                                    <div class="testimonial-quote">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <div class="testimonial-text">
+                                        <div id="Segundo-Slide">
+                                            <div> 
+                                                <b>Redes Sociales</b><br>
+                                                <ul>
+                                                    <li><a href="https://www.facebook.com/daniel.oyola.1238/?locale=es_ES">Facebook</a></li>
+                                                    <li><a href="https://github.com/danieloyolamoreno">Github</a></li>
+                                                    <li><a href="https://www.instagram.com/_oyolaa_">Instagram</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <b>Disponibilidad</b><br>
+                                                <ul>
+                                                    <li>Carnet de conducir</li>
+                                                    <li>Coche</li>	
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <b>Mis idiomas</b><br>
+                                                <ul>
+                                                    <li>Español</li>
+                                                    <li>Inglés(Nivel A2)</li>	
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="testimonial-dots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="resume-footer">
+            <p>&copy; <span id="current-year"></span> Daniel Oyola Moreno. Derechos reservados</p>
+        </footer>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
