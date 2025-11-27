@@ -18,23 +18,23 @@ const navItems = [
 ---
 
 <header class="fixed top-0 left-0 right-0 z-50 glass shadow-sm">
-  <nav class="container mx-auto px-4 py-4">
+  <nav class="container mx-auto px-4 sm:px-6 py-3 md:py-4">
     <div class="flex items-center justify-between">
       <a 
         href="#inicio" 
-        class="text-2xl font-bold icon-hover px-3 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent bg-[length:200%_auto] hover:bg-right-bottom transition-all duration-700"
+        class="text-lg md:text-2xl font-bold icon-hover px-2 md:px-3 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent bg-[length:200%_auto] hover:bg-right-bottom transition-all duration-700"
         aria-label="Ir al inicio"
       >
-        Daniel <span>Oyola Moreno</span>
+        Daniel <span class="hidden sm:inline">Oyola Moreno</span>
       </a>
       
-      <div class="flex items-center gap-4">
-        <ul class="hidden md:flex items-center gap-8">
+      <div class="flex items-center gap-2 md:gap-4">
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8">
           {navItems.map((item) => (
             <li>
               <a 
                 href={item.href}
-                class="text-gray-700 hover:text-primary transition-all duration-300 font-medium relative group"
+                class="text-sm lg:text-base text-gray-700 hover:text-primary transition-all duration-300 font-medium relative group"
               >
                 {item.name}
                 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
@@ -43,23 +43,13 @@ const navItems = [
           ))}
         </ul>
         
-        <!-- Language Switcher -->
-        <!-- <div class="flex items-center gap-2">
-          <a 
-            href={lang === 'es' ? '/en/' : '/'}
-            class="px-3 py-1 text-sm font-medium text-gray-700 hover:text-primary transition-colors"
-          >
-            {lang === 'es' ? '🇬🇧 EN' : '🇪🇸 ES'}
-          </a>
-        </div> -->
-        
         <button 
           id="mobile-menu-button"
           class="md:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors" 
           aria-label="Abrir menú de navegación"
           aria-expanded="false"
         >
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
@@ -67,13 +57,13 @@ const navItems = [
     </div>
     
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden mt-4 py-4 border-t border-gray-200">
-      <ul class="space-y-3">
+    <div id="mobile-menu" class="hidden md:hidden mt-3 md:mt-4 py-3 md:py-4 border-t border-gray-200">
+      <ul class="space-y-2 md:space-y-3">
         {navItems.map((item) => (
           <li>
             <a 
               href={item.href}
-              class="block text-gray-700 hover:text-primary transition-colors font-medium py-2"
+              class="block text-sm md:text-base text-gray-700 hover:text-primary transition-colors font-medium py-2"
             >
               {item.name}
             </a>

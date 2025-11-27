@@ -37,33 +37,33 @@ const socialLinks = [
 ];
 ---
 
-<footer class="bg-gradient-to-br from-secondary to-gray-900 text-white py-16 relative overflow-hidden">
+<footer class="bg-gradient-to-br from-secondary to-gray-900 text-white py-10 md:py-16 relative overflow-hidden">
   <!-- Background Decoration -->
   <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
-    <div class="absolute top-0 left-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
-    <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-400 rounded-full blur-3xl"></div>
+    <div class="absolute top-0 left-0 w-64 md:w-96 h-64 md:h-96 bg-primary rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-64 md:w-96 h-64 md:h-96 bg-blue-400 rounded-full blur-3xl"></div>
   </div>
   
-  <div class="container mx-auto px-4 relative z-10">
+  <div class="container mx-auto px-4 sm:px-6 relative z-10">
     <div class="max-w-6xl mx-auto">
-      <div class="grid md:grid-cols-3 gap-12 mb-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-8 md:mb-12">
         <div data-aos="fade-up" data-aos-delay="100">
-          <h3 class="text-3xl font-bold mb-4 bg-gradient-to-r from-white via-primary to-blue-400 bg-clip-text text-transparent bg-[length:200%_auto] hover:bg-right-bottom transition-all duration-700">
+          <h3 class="text-2xl md:text-3xl font-bold mb-3 md:mb-4 bg-gradient-to-r from-white via-primary to-blue-400 bg-clip-text text-transparent bg-[length:200%_auto] hover:bg-right-bottom transition-all duration-700">
             Daniel <span>Oyola Moreno</span>
           </h3>
-          <p class="text-gray-400 leading-relaxed mb-6">
+          <p class="text-sm md:text-base text-gray-400 leading-relaxed mb-4 md:mb-6">
             {t('footer.description')}
           </p>
-          <div class="flex gap-4">
+          <div class="flex gap-3 md:gap-4">
             {socialLinks.map((social) => (
               <a 
                 href={social.href} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                class="w-10 h-10 bg-white/10 hover:bg-primary rounded-lg flex items-center justify-center icon-hover transition-colors"
+                class="w-9 h-9 md:w-10 md:h-10 bg-white/10 hover:bg-primary rounded-lg flex items-center justify-center icon-hover transition-colors"
                 aria-label={`Visitar mi perfil de ${social.name}`}
               >
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <svg class="w-4 h-4 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path d={social.icon}/>
                 </svg>
               </a>
@@ -72,15 +72,15 @@ const socialLinks = [
         </div>
         
         <div data-aos="fade-up" data-aos-delay="200">
-          <h4 class="font-bold text-lg mb-6 text-white">{t('footer.quickLinks')}</h4>
-          <ul class="space-y-3">
+          <h4 class="font-bold text-base md:text-lg mb-4 md:mb-6 text-white">{t('footer.quickLinks')}</h4>
+          <ul class="space-y-2 md:space-y-3">
             {footerLinks.map((link) => (
               <li>
                 <a 
                   href={link.href} 
-                  class="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group"
+                  class="text-sm md:text-base text-gray-400 hover:text-white transition-colors flex items-center gap-2 group"
                 >
-                  <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-3.5 h-3.5 md:w-4 md:h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                   </svg>
                   {link.name}
@@ -91,18 +91,18 @@ const socialLinks = [
         </div>
         
         <div data-aos="fade-up" data-aos-delay="300">
-          <h4 class="font-bold text-lg mb-6 text-white">{t('footer.contact')}</h4>
-          <ul class="space-y-4">
-            <li class="flex items-start gap-3 text-gray-400">
-              <svg class="w-5 h-5 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <h4 class="font-bold text-base md:text-lg mb-4 md:mb-6 text-white">{t('footer.contact')}</h4>
+          <ul class="space-y-3 md:space-y-4">
+            <li class="flex items-start gap-2 md:gap-3 text-gray-400 text-sm md:text-base">
+              <svg class="w-4 h-4 md:w-5 md:h-5 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
-              <a href="mailto:doyolam01@educarex.es" class="hover:text-white transition-colors">
+              <a href="mailto:doyolam01@educarex.es" class="hover:text-white transition-colors break-all">
                 doyolam01@educarex.es
               </a>
             </li>
-            <li class="flex items-start gap-3 text-gray-400">
-              <svg class="w-5 h-5 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <li class="flex items-start gap-2 md:gap-3 text-gray-400 text-sm md:text-base">
+              <svg class="w-4 h-4 md:w-5 md:h-5 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
@@ -112,9 +112,9 @@ const socialLinks = [
         </div>
       </div>
       
-      <div class="border-t border-gray-700 pt-8" data-aos="fade-up" data-aos-delay="400">
-        <div class="flex flex-col md:flex-row justify-center items-center gap-4">
-          <p class="text-gray-400 text-sm text-center md:text-left">
+      <div class="border-t border-gray-700 pt-6 md:pt-8" data-aos="fade-up" data-aos-delay="400">
+        <div class="flex flex-col md:flex-row justify-center items-center gap-3 md:gap-4">
+          <p class="text-gray-400 text-xs md:text-sm text-center">
             &copy; {currentYear} Daniel Oyola Moreno. {t('footer.rights')}
           </p>
         </div>
@@ -126,10 +126,10 @@ const socialLinks = [
 <!-- Back to Top Button -->
 <button 
   id="back-to-top"
-  class="fixed bottom-8 right-8 w-12 h-12 bg-primary text-white rounded-full shadow-lg opacity-0 pointer-events-none transition-all duration-300 hover:bg-blue-700 button-hover z-40"
+  class="fixed bottom-6 right-6 md:bottom-8 md:right-8 w-10 h-10 md:w-12 md:h-12 bg-primary text-white rounded-full shadow-lg opacity-0 pointer-events-none transition-all duration-300 hover:bg-blue-700 button-hover z-40"
   aria-label={t('common.backToTop')}
 >
-  <svg class="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <svg class="w-5 h-5 md:w-6 md:h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
   </svg>
 </button>
