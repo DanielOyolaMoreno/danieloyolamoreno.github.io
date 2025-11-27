@@ -1,0 +1,66 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "skills": "Habilidades",
+        "projects": "Proyectos",
+        "titles": "Títulos"
+    },
+    "hero": {
+        "available": "Disponible para trabajar",
+        "title": "Desarrollador",
+        "subtitle": "Full Stack",
+        "description": "Especializado en crear aplicaciones web modernas y escalables con",
+        "cta": "Ver proyectos"
+    },
+    "about": {
+        "title": "Sobre mí",
+        "intro": "Me llamo Daniel Oyola Moreno y soy un joven desarrollador de 20 años que reside en Badajoz, le apasiona este mundo y le gusta aprender todo tipo de tecnologías.",
+        "description": "Me especializo en el desarrollo frontend con React, Angular y TypeScript, pero también tengo experiencia en backend con Springboot. Me encanta resolver problemas complejos y aprender nuevas tecnologías."
+    },
+    "skills": {
+        "title": "Habilidades",
+        "technical": "Skills Técnicos",
+        "soft": "Skills Blandos",
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "devops": "DevOps & Tools",
+        "methodologies": "Metodologías",
+        "problemSolving": "Resolución de Problemas",
+        "problemSolvingDesc": "Capacidad para analizar y resolver problemas complejos de manera eficiente.",
+        "teamwork": "Trabajo en Equipo",
+        "teamworkDesc": "Colaboración efectiva con equipos multidisciplinarios y comunicación clara.",
+        "learning": "Aprendizaje Continuo",
+        "learningDesc": "Constante actualización en nuevas tecnologías y mejores prácticas.",
+        "timeManagement": "Gestión del Tiempo",
+        "timeManagementDesc": "Organización y priorización eficaz de tareas y proyectos.",
+        "creativity": "Creatividad",
+        "creativityDesc": "Propuesta de soluciones innovadoras y pensamiento fuera de lo convencional.",
+        "punctuality": "Puntualidad",
+        "punctualityDesc": "Compromiso con los plazos y entrega a tiempo de los proyectos."
+    },
+    "projects": {
+        "title": "Proyectos Destacados",
+        "featured": "Destacado",
+        "code": "Código",
+        "demo": "Demo",
+        "viewMore": "Ver más proyectos"
+    },
+    "titles": {
+        "title": "Títulos obtenidos",
+        "current": "Actualmente en curso",
+        "eso": "Educación Secundaria Obligatoria",
+        "smr": "GM-Sistemas Microinformáticos y Redes",
+        "smrDesc": "Estudios centrados en la instalación, configuración y mantenimiento de sistemas informáticos, redes locales y servicios de internet, con énfasis en la resolución de problemas técnicos y la seguridad informática.",
+        "daw": "GS-Desarrollo de Aplicaciones Web"
+    },
+    "footer": {
+        "description": "Desarrollador Full Stack creando experiencias web excepcionales con las últimas tecnologías.",
+        "quickLinks": "Enlaces Rápidos",
+        "contact": "Contacto",
+        "rights": "Todos los derechos reservados."
+    },
+    "common": {
+        "backToTop": "Volver arriba"
+    }
+}

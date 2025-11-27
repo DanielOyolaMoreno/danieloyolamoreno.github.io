@@ -1,0 +1,144 @@
+---
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: 'es' | 'en';
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const technicalSkills = [
+  {
+    title: t('skills.frontend'),
+    icon: '💻',
+    skills: [
+      { name: 'React' },
+      { name: 'TypeScript' },
+      { name: 'JavaScript' },
+      { name: 'Angular' },
+      { name: 'HTML5/CSS3' },
+    ]
+  },
+  {
+    title: t('skills.backend'),
+    icon: '⚙️',
+    skills: [
+      { name: 'SpringBoot' },
+      { name: 'PostgreSQL' },
+      { name: 'MySQL' },
+      { name: 'PHP' },
+      { name: 'Java' },
+      { name: 'Bash/Shell' },
+    ]
+  },
+  {
+    title: t('skills.devops'),
+    icon: '🛠️',
+    skills: [
+      { name: 'Git' },
+      { name: 'Docker' },
+      { name: 'AWS' },
+      { name: 'Postman' },
+      { name: 'Gimp' },
+      { name: 'Excel' },
+      { name: 'LibreOffice' },
+    ]
+  },
+  {
+    title: t('skills.methodologies'),
+    icon: '📋',
+    skills: [
+      { name: 'Scrum' },
+      { name: 'Clean Code' },
+    ]
+  }
+];
+
+const softSkills = [
+  {
+    icon: '🎯',
+    title: t('skills.problemSolving'),
+    description: t('skills.problemSolvingDesc')
+  },
+  {
+    icon: '👥',
+    title: t('skills.teamwork'),
+    description: t('skills.teamworkDesc')
+  },
+  {
+    icon: '📚',
+    title: t('skills.learning'),
+    description: t('skills.learningDesc')
+  },
+  {
+    icon: '⏰',
+    title: t('skills.timeManagement'),
+    description: t('skills.timeManagementDesc')
+  },
+  {
+    icon: '💡',
+    title: t('skills.creativity'),
+    description: t('skills.creativityDesc')
+  },
+  {
+    icon: '⏱️',
+    title: t('skills.punctuality'),
+    description: t('skills.punctualityDesc')
+  }
+];
+---
+
+<section id="skills" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+  <div class="container mx-auto px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="section-title text-center mb-16" data-aos="fade-up">{t('skills.title')}</h2>
+      
+      <!-- Skills Técnicos -->
+      <div class="mb-20">
+        <h3 class="text-2xl font-bold text-secondary text-center mb-10" data-aos="fade-up">
+          💻 {t('skills.technical')}
+        </h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {technicalSkills.map((category, idx) => (
+            <div 
+              class="glass p-6 rounded-xl shadow-sm card-hover"
+              data-aos="fade-up"
+              data-aos-delay={idx * 100}
+            >
+              <div class="text-4xl mb-4 text-center">{category.icon}</div>
+              <h4 class="text-xl font-bold text-secondary mb-6 text-center">{category.title}</h4>
+              <div class="space-y-3">
+                {category.skills.map((skill) => (
+                  <div class="text-center">
+                    <span class="text-sm font-medium text-gray-700">{skill.name}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <!-- Skills Blandos -->
+      <div>
+        <h3 class="text-2xl font-bold text-secondary text-center mb-10" data-aos="fade-up">
+          ✨ {t('skills.soft')}
+        </h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {softSkills.map((skill, idx) => (
+            <div 
+              class="glass p-6 rounded-xl shadow-sm card-hover"
+              data-aos="fade-up"
+              data-aos-delay={idx * 100}
+            >
+              <div class="text-4xl mb-4 text-center">{skill.icon}</div>
+              <h4 class="text-lg font-bold text-secondary mb-3 text-center">{skill.title}</h4>
+              <p class="text-sm text-gray-600 text-center leading-relaxed">{skill.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

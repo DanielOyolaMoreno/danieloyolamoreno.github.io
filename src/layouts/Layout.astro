@@ -1,0 +1,121 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Portfolio profesional - Desarrollador Full Stack especializado en Angular, Springboot y Laravel' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- SEO optimizado para ATS -->
+    <meta name="keywords" content="desarrollador full stack, react developer, typescript, node.js, frontend developer, backend developer, web developer, portfolio, javascript, next.js, software engineer" />
+    <meta name="author" content="Daniel Oyola Moreno" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    
+    <link rel="icon" type="image/svg+xml" href="/icono3.png" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" />
+    
+    <title>{title}</title>
+    
+    <!-- Loading Screen Styles -->
+    <style>
+      #loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease-out;
+      }
+      
+      #loading-screen.fade-out {
+        opacity: 0;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <span class="loader"></span>
+    </div>
+    
+    <slot />
+    
+    <!-- AOS Library Init -->
+    <script>
+      import AOS from 'aos';
+      
+      // Initialize AOS
+      AOS.init({
+        duration: 800,
+        easing: 'ease-out-cubic',
+        once: true,
+        offset: 100,
+        delay: 100,
+      });
+      
+      // Loading Screen
+      window.addEventListener('load', () => {
+        const loadingScreen = document.getElementById('loading-screen');
+        if (loadingScreen) {
+          setTimeout(() => {
+            loadingScreen.classList.add('fade-out');
+            setTimeout(() => {
+              loadingScreen.style.display = 'none';
+            }, 500);
+          }, 1000);
+        }
+      });
+      
+      // Smooth scroll for anchor links
+      document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (this: HTMLAnchorElement, e: Event) {
+          e.preventDefault();
+          const href = this.getAttribute('href');
+          if (href) {
+            const target = document.querySelector(href);
+            if (target) {
+              target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

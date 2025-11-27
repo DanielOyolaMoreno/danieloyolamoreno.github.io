@@ -1,0 +1,64 @@
+---
+import { Image } from 'astro:assets';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: 'es' | 'en';
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<section id="sobre-mi" class="py-20 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="section-title" data-aos="fade-right">{t('about.title')}</h2>
+      
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div data-aos="fade-right" data-aos-delay="200">
+          <div class="aspect-square bg-gradient-to-br from-primary to-blue-600 rounded-2xl shadow-2xl overflow-hidden relative group">
+            <Image 
+              src="/profile.png"
+              alt="Foto profesional del desarrollador"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              loading="lazy"
+              width={500}
+              height={500}
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
+        </div>
+        
+        <div class="space-y-6">
+          <p 
+            class="text-lg text-gray-700 leading-relaxed"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
+            {t('about.intro')}
+          </p>
+          
+          <p 
+            class="text-lg text-gray-700 leading-relaxed"
+            data-aos="fade-left"
+            data-aos-delay="400"
+          >
+            {t('about.description')}
+          </p>
+          
+          <div 
+            class="flex flex-wrap gap-3 pt-4"
+            data-aos="fade-left"
+            data-aos-delay="500"
+          >
+            <span class="px-3 py-2 glass text-primary rounded-lg font-medium button-hover">React</span>
+            <span class="px-3 py-2 glass text-primary rounded-lg font-medium button-hover">TypeScript</span>
+            <span class="px-3 py-2 glass text-primary rounded-lg font-medium button-hover">Springboot</span>
+            <span class="px-3 py-2 glass text-primary rounded-lg font-medium button-hover">Angular</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

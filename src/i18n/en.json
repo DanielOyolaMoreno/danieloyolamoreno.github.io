@@ -1,0 +1,70 @@
+{
+    "site": {
+        "title": "My Portfolio",
+        "description": "Personal portfolio showcasing projects and experience"
+    },
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects",
+        "titles": "Titles"
+    },
+    "hero": {
+        "available": "Available for work",
+        "title": "Developer",
+        "subtitle": "Full Stack",
+        "description": "Specialized in creating modern and scalable web applications with",
+        "cta": "View projects"
+    },
+    "about": {
+        "title": "About me",
+        "intro": "My name is Daniel Oyola Moreno and I am a 20-year-old young developer who lives in Badajoz, passionate about this world and likes to learn all kinds of technologies.",
+        "description": "I specialize in frontend development with React, Angular and TypeScript, but I also have experience in backend with Springboot. I love solving complex problems and learning new technologies."
+    },
+    "skills": {
+        "title": "Skills",
+        "technical": "Technical Skills",
+        "soft": "Soft Skills",
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "devops": "DevOps & Tools",
+        "methodologies": "Methodologies",
+        "problemSolving": "Problem Solving",
+        "problemSolvingDesc": "Ability to analyze and solve complex problems efficiently.",
+        "teamwork": "Teamwork",
+        "teamworkDesc": "Effective collaboration with multidisciplinary teams and clear communication.",
+        "learning": "Continuous Learning",
+        "learningDesc": "Constant updating in new technologies and best practices.",
+        "timeManagement": "Time Management",
+        "timeManagementDesc": "Effective organization and prioritization of tasks and projects.",
+        "creativity": "Creativity",
+        "creativityDesc": "Proposal of innovative solutions and out-of-the-box thinking.",
+        "punctuality": "Punctuality",
+        "punctualityDesc": "Commitment to deadlines and timely project delivery."
+    },
+    "projects": {
+        "title": "Featured Projects",
+        "featured": "Featured",
+        "code": "Code",
+        "demo": "Demo",
+        "viewMore": "View more projects"
+    },
+    "titles": {
+        "title": "Obtained Titles",
+        "current": "Currently in progress",
+        "eso": "Compulsory Secondary Education",
+        "smr": "Microcomputer Systems and Networks",
+        "smrDesc": "Studies focused on the installation, configuration and maintenance of computer systems, local networks and internet services, with emphasis on technical problem solving and computer security.",
+        "daw": "Web Application Development"
+    },
+    "footer": {
+        "description": "Full Stack Developer creating exceptional web experiences with the latest technologies.",
+        "quickLinks": "Quick Links",
+        "contact": "Contact",
+        "rights": "All rights reserved."
+    },
+    "common": {
+        "backToTop": "Back to top"
+    }
+}

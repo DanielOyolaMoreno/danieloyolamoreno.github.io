@@ -1,0 +1,107 @@
+---
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: 'es' | 'en';
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const navItems = [
+  { name: t('nav.home'), href: '#inicio' },
+  { name: t('nav.about'), href: '#sobre-mi' },
+  { name: t('nav.skills'), href: '#skills' },
+  { name: t('nav.projects'), href: '#proyectos' },
+  { name: t('nav.titles'), href: '#titulos' },
+];
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 glass shadow-sm">
+  <nav class="container mx-auto px-4 py-4">
+    <div class="flex items-center justify-between">
+      <a 
+        href="#inicio" 
+        class="text-2xl font-bold icon-hover px-3 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent bg-[length:200%_auto] hover:bg-right-bottom transition-all duration-700"
+        aria-label="Ir al inicio"
+      >
+        Daniel <span>Oyola Moreno</span>
+      </a>
+      
+      <div class="flex items-center gap-4">
+        <ul class="hidden md:flex items-center gap-8">
+          {navItems.map((item) => (
+            <li>
+              <a 
+                href={item.href}
+                class="text-gray-700 hover:text-primary transition-all duration-300 font-medium relative group"
+              >
+                {item.name}
+                <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+              </a>
+            </li>
+          ))}
+        </ul>
+        
+        <!-- Language Switcher -->
+        <!-- <div class="flex items-center gap-2">
+          <a 
+            href={lang === 'es' ? '/en/' : '/'}
+            class="px-3 py-1 text-sm font-medium text-gray-700 hover:text-primary transition-colors"
+          >
+            {lang === 'es' ? '🇬🇧 EN' : '🇪🇸 ES'}
+          </a>
+        </div> -->
+        
+        <button 
+          id="mobile-menu-button"
+          class="md:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors" 
+          aria-label="Abrir menú de navegación"
+          aria-expanded="false"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4 py-4 border-t border-gray-200">
+      <ul class="space-y-3">
+        {navItems.map((item) => (
+          <li>
+            <a 
+              href={item.href}
+              class="block text-gray-700 hover:text-primary transition-colors font-medium py-2"
+            >
+              {item.name}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<script>
+  // Mobile menu toggle
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  if (mobileMenuButton && mobileMenu) {
+    mobileMenuButton.addEventListener('click', () => {
+      const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+      mobileMenuButton.setAttribute('aria-expanded', (!isExpanded).toString());
+      mobileMenu.classList.toggle('hidden');
+    });
+    
+    // Close mobile menu when clicking on a link
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        mobileMenuButton.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+</script>
