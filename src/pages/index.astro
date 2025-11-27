@@ -28,14 +28,15 @@ const t = useTranslations(lang);
 
 <script>
   // Detección de idioma del navegador solo una vez
-  if (!sessionStorage.getItem('langChecked')) {
-    const browserLang = navigator.language.split('-')[0];
-    
-    if (browserLang === 'en' && !window.location.pathname.includes('/en')) {
+  document.addEventListener('DOMContentLoaded', () => {
+    if (!sessionStorage.getItem('langChecked')) {
       sessionStorage.setItem('langChecked', 'true');
-      window.location.href = '/en/';
-    } else {
-      sessionStorage.setItem('langChecked', 'true');
+      
+      const browserLang = navigator.language.split('-')[0];
+      
+      if (browserLang === 'en' && !window.location.pathname.includes('/en')) {
+        window.location.href = '/en/';
+      }
     }
-  }
+  });
 </script>

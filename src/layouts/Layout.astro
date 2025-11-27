@@ -96,9 +96,20 @@ const { title, description = 'Portfolio profesional - Desarrollador Full Stack e
             setTimeout(() => {
               loadingScreen.style.display = 'none';
             }, 500);
-          }, 1000);
+          }, 300);
         }
       });
+      
+      // Fallback: force hide loading screen after 3 seconds
+      setTimeout(() => {
+        const loadingScreen = document.getElementById('loading-screen');
+        if (loadingScreen && loadingScreen.style.display !== 'none') {
+          loadingScreen.classList.add('fade-out');
+          setTimeout(() => {
+            loadingScreen.style.display = 'none';
+          }, 500);
+        }
+      }, 3000);
       
       // Smooth scroll for anchor links
       document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach(anchor => {
