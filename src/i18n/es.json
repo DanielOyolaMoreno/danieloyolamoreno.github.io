@@ -10,13 +10,13 @@
         "available": "Disponible para trabajar",
         "title": "Desarrollador",
         "subtitle": "Full Stack",
-        "description": "Especializado en crear aplicaciones web modernas y escalables con",
+        "description": "Creador de aplicaciones web modernas y escalables con",
         "cta": "Ver proyectos"
     },
     "about": {
         "title": "Sobre mí",
         "intro": "Me llamo Daniel Oyola Moreno y soy un joven desarrollador de 20 años que reside en Badajoz, le apasiona este mundo y le gusta aprender todo tipo de tecnologías.",
-        "description": "Me especializo en el desarrollo frontend con React, Angular y TypeScript, pero también tengo experiencia en backend con Springboot. Me encanta resolver problemas complejos y aprender nuevas tecnologías."
+        "description": "He desarrollado en frontend con React, Angular y TypeScript, pero también tengo experiencia en backend con Springboot. Me encanta resolver problemas complejos y aprender nuevas tecnologías."
     },
     "skills": {
         "title": "Habilidades",
