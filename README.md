@@ -2,7 +2,7 @@
 
 <div align="center">
   
-### 💻 Desarrollador Full Stack | 20 años | Badajoz, España
+### 💻 Desarrollador Full Stack | 21 años | Badajoz, España
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-danieloyolamoreno.github.io-blue?style=for-the-badge&logo=google-chrome)](https://danieloyolamoreno.github.io)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Daniel_Oyola-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/daniel-oyola-moreno-227696387/)

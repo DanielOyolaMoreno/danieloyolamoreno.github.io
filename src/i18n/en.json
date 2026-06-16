@@ -8,7 +8,7 @@
         "about": "About",
         "skills": "Skills",
         "projects": "Projects",
-        "titles": "Titles"
+        "resume": "Resume"
     },
     "hero": {
         "available": "Available for work",
@@ -19,7 +19,7 @@
     },
     "about": {
         "title": "About me",
-        "intro": "My name is Daniel Oyola Moreno. I am a 20-year-old developer living in Badajoz, passionate about this field and eager to learn all kinds of technologies.",
+        "intro": "My name is Daniel Oyola Moreno. I am a 21-year-old developer living in Badajoz, passionate about this field and eager to learn all kinds of technologies.",
         "description": "I have worked on frontend development with React, Angular and TypeScript, and I also have backend experience with Spring Boot. I love solving complex problems and learning new technologies."
     },
     "skills": {
@@ -50,6 +50,11 @@
         "demo": "Demo",
         "viewMore": "View more projects"
     },
+    "resume": {
+        "title": "Experience & Education",
+        "experience": "Work Experience",
+        "education": "Education"
+    },
     "titles": {
         "title": "Obtained Titles",
         "current": "Currently in progress",
@@ -57,6 +62,15 @@
         "smr": "Microcomputer Systems and Networks",
         "smrDesc": "Studies focused on the installation, configuration and maintenance of computer systems, local networks and internet services, with an emphasis on technical problem solving and computer security.",
         "daw": "Web Application Development"
+    },
+    "experience": {
+        "title": "Work Experience",
+        "job1": "Full Stack Developer",
+        "job1Desc": "I am currently working in the Transport team, which I joined after completing my internship at Minsait (Indra). I develop and maintain software using AngularJS and Spring Boot.",
+        "job2": "Internship at Minsait (Indra)",
+        "job2Desc": "During my internship at Minsait (Indra), I participated in the development of web applications using AngularJS and Spring Boot. I collaborated with a team of developers to implement new features and improve the user experience.",
+        "job3": "Internship at CPR de Jerez de los Caballeros",
+        "job3Desc": "During my internship at CPR de Jerez de los Caballeros, I gained experience in customer service, incident management, and teamwork."
     },
     "footer": {
         "description": "Full Stack Developer creating exceptional web experiences with the latest technologies.",

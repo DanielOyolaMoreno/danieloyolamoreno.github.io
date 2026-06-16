@@ -4,7 +4,7 @@
         "about": "Sobre mí",
         "skills": "Habilidades",
         "projects": "Proyectos",
-        "titles": "Títulos"
+        "resume": "Trayectoria"
     },
     "hero": {
         "available": "Disponible para trabajar",
@@ -15,7 +15,7 @@
     },
     "about": {
         "title": "Sobre mí",
-        "intro": "Me llamo Daniel Oyola Moreno y soy un joven desarrollador de 20 años que reside en Badajoz, le apasiona este mundo y le gusta aprender todo tipo de tecnologías.",
+        "intro": "Me llamo Daniel Oyola Moreno y soy un joven desarrollador de 21 años que reside en Badajoz, le apasiona este mundo y le gusta aprender todo tipo de tecnologías.",
         "description": "He desarrollado en frontend con React, Angular y TypeScript, pero también tengo experiencia en backend con Springboot. Me encanta resolver problemas complejos y aprender nuevas tecnologías."
     },
     "skills": {
@@ -46,6 +46,11 @@
         "demo": "Demo",
         "viewMore": "Ver más proyectos"
     },
+    "resume": {
+        "title": "Experiencia y Formación",
+        "experience": "Experiencia Laboral",
+        "education": "Educación"
+    },
     "titles": {
         "title": "Títulos obtenidos",
         "current": "Actualmente en curso",
@@ -53,6 +58,16 @@
         "smr": "GM-Sistemas Microinformáticos y Redes",
         "smrDesc": "Estudios centrados en la instalación, configuración y mantenimiento de sistemas informáticos, redes locales y servicios de internet, con énfasis en la resolución de problemas técnicos y la seguridad informática.",
         "daw": "GS-Desarrollo de Aplicaciones Web"
+    },
+    "experience": {
+        "title": "Experiencia Laboral",
+        "job1": "Desarrollador Full Stack",
+        "job1Desc": "Actualmente estoy trabajando en el equipo de Transporte en donde integre tras finalizar las practicas en Minsait(Indra). Desarrollo y mantengo software utilizando AngularJS y Spring Boot.",
+        "job2": "Prácticas en Minsait (Indra)",
+        "job2Desc": "Durante mis prácticas en Minsait (Indra), participé en el desarrollo de aplicaciones web utilizando AngularJS y Spring Boot. Colaboré con un equipo de desarrolladores para implementar nuevas funcionalidades y mejorar la experiencia del usuario.",
+        "job3": "Prácticas en el CPR de Jerez de los Caballeros",
+        "job3Desc": "Durante mis prácticas en el CPR de Jerez de los Caballeros, adquirí experiencia en la atención al cliente, gestión de incidencias y trabajo en equipo."
+
     },
     "footer": {
         "description": "Desarrollador Full Stack creando experiencias web excepcionales con las últimas tecnologías.",
